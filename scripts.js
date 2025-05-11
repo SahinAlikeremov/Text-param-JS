@@ -21,7 +21,7 @@ console.log(capitalizeWords("hello world"));
 function isLucky(number) {
     let hexacopter = String(number).split("").slice(0, 6);
 
-    if (+hexacopter[0] + hexacopter[1] + hexacopter[2] === hexacopter[3] + hexacopter[4] + hexacopter[5]) {
+    if (+hexacopter[0] + +hexacopter[1] + +hexacopter[2] === +hexacopter[3] + +hexacopter[4] + +hexacopter[5]) {
         return true;
     }
     else {
@@ -30,5 +30,5 @@ function isLucky(number) {
 
 }
 
-console.log(isLucky(121121));
+console.log(isLucky(141231));
 console.log(isLucky(111191));
